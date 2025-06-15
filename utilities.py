@@ -5,6 +5,10 @@ import re
 
 console = Console()
 
+#Função que limpa o terminal quando o usuario iniciar o script.
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 #Essa função valida se o usuario vai passar caracteres validos.
 
 def is_valid_name(name: str ) -> bool:
@@ -47,6 +51,8 @@ def save_in_txt(password):
         arq.write(f"Password: {password}\n")
 
     console.print(f"[bold green]Password saved successfully in {path}[/bold green]")
+
+
 
     
 

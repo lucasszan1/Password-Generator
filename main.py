@@ -1,6 +1,8 @@
 from menu import MainMenu
 from rich.console import Console
+from utilities import clear_terminal
 
+clear_terminal()
 console = Console()
 
 #Função principal que executa todo o projeto.
