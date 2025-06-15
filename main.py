@@ -3,18 +3,19 @@ from rich.console import Console
 
 console = Console()
 
+#Função principal que executa todo o projeto.
 def main():
- 
+
     menu = MainMenu
 
     while True:
-        opcao = menu.main_menu()
-        if opcao == "0":
+        user_option = menu.main_menu()
+        if user_option == "0":
             console.print("[bold red] Quit [/bold red]")
             break
-        elif opcao == "1":
+        elif user_option == "1":
             menu.start_generator()
-        elif opcao == "2":
+        elif user_option == "2":
             menu.start_test()
             continue
 

@@ -2,6 +2,8 @@ import random
 import string
 
 class GeneratedPasword():
+
+#Função que gera a senha.
     def generate(self, size = 12, use_symbols = True, use_numbers = True, use_upper = True, use_lowers = True):
         caracteres = ''
 

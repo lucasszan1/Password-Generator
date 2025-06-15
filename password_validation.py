@@ -3,6 +3,7 @@ from rich.console import Console
 
 console = Console()
 
+#Função que checa se a senha informada é fraca, mediana ou forte.
 def check_password(password):
     result = zxcvbn(password)
     score = result["score"]
